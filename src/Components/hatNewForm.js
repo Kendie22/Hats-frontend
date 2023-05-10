@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 export default function HatEditForm() {
-    let {id} = useParams();
+    let {id} = useParams(); 
+    let navigate = useNavigate();
 
     const [hat, setHat] = useState({    
         style: "",
@@ -14,6 +15,7 @@ export default function HatEditForm() {
         price: "",
     });
 
+    
     useEffect(() => {
         axios.get(`http://localhost:3003/hats/${id}`).then((response) => {
             setHat(response.data);
