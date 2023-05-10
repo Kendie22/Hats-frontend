@@ -100,7 +100,7 @@ function HatNewForm() {
   );
 }
 
-export default AlbumNewForm;
+export default HatNewForm;
 
 
 
