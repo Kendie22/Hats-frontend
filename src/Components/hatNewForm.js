@@ -19,7 +19,7 @@ function HatNewForm() {
       .catch((c) => console.warn("catch", c));
   };
 
-  const [newHat, setNewHat] = useState({
+  const [hat, setNewHat] = useState({
     style: "",   
     color: "",
     size: "",
@@ -37,7 +37,7 @@ function HatNewForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    addHat(hats);
+    addHat(hat);
   };
   return (
     <div className="New">
