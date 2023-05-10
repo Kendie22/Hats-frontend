@@ -1,5 +1,6 @@
 import HatNewForm from "./Components/HatNewForm.js"
 
+
 function newHat() {
   return (
     <div className="New">
