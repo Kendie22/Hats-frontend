@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 
 
+
 function Hat({ hat }) {
     return (
+
+    
+return(
+
 
         <tr>
             <td>{hat.style}</td>
