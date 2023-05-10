@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-
+import axios from 'axios';
 
 export default function HatEditForm() {
     let {id} = useParams();
@@ -20,7 +20,7 @@ export default function HatEditForm() {
         });  
     }, []);
 
-    const handleChange = (event) => {    
+    const handleTextChange = (event) => {    
         setHat({...hat, [event.target.name]: event.target.value});
     };
 
