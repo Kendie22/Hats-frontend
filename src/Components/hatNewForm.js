@@ -3,7 +3,8 @@ import {useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 export default function HatEditForm() {
-    let {id} = useParams();
+    let {id} = useParams(); 
+    let navigate = useNavigate();
 
     const [hat, setHat] = useState({    
         style: "",
