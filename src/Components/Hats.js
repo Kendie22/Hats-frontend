@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Hat from "./Hat";
+import Hat from "./Hat.js";
 
 const API = process.env.REACT_APP_API_URL;
 
