@@ -26,7 +26,7 @@
 //                     </thead>
 //                     <tbody>
 //                         {hats.map((hat) => {
-//                             return <Hat key={hat.id} hat={hat} />;
+//                             return <Hat key={hat.id} hat={hat} />; 
 //                         })}
 //                     </tbody>
 //                 </table>
