@@ -1,10 +1,10 @@
-import hatNewForm from '../Components/HatNewForm';
+import HatNewForm from "./Components/HatNewForm.js"
 
 function newHat() {
   return (
     <div className="New">
       <h2>New Hat</h2>
-      <hatNewForm />
+      <HatNewForm />
     </div>
   );
 }
