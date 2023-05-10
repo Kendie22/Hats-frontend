@@ -19,4 +19,3 @@ function Hat({ hat }) {
     )
 }
 export default Hat;
-
