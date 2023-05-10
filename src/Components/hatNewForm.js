@@ -15,6 +15,7 @@ export default function HatEditForm() {
         price: "",
     });
 
+    
     useEffect(() => {
         axios.get(`http://localhost:3003/hats/${id}`).then((response) => {
             setHat(response.data);
