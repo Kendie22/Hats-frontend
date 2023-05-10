@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
 
+
 function Hat({ hat }) {
+
 return(
 
     <tr>
