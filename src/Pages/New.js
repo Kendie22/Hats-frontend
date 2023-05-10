@@ -1,4 +1,5 @@
-import HatNewForm from './Components/HatNewForm';
+import HatNewForm from "./Components/HatNewForm.js"
+
 
 function newHat() {
   return (
