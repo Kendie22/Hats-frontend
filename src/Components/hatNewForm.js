@@ -102,24 +102,3 @@ function HatNewForm() {
 }
 
 export default HatNewForm;
-
-
-
-
-=======
-<label htmlFor="price">Price:</label>
-  <input
-    id="price"
-    type="text"
-    name="price"
-    values={hat.price}
-    onChange={handleTextChange}
-  />
-  <br />
-
-  <input type="submit" />
-</form>
-</div>
-;
-}
-
