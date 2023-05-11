@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import "./Hat.css";
 import Hat from "./hat";
+import "./Hat.css"
 
 
 const API = process.env.REACT_APP_API_URL;
