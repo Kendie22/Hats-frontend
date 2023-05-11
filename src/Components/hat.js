@@ -10,7 +10,7 @@ function Hat({ hat }) {
             <td>{hat.is_available}</td>
             <td>{hat.material}</td>
             <td>{hat.price}</td>
-
+            <td>{hat.image}</td>
             <td>
                 <Link to={`/hats/${hat.id}`}>✏️</Link>
             </td>
