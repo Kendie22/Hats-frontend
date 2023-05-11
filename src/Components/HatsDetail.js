@@ -10,7 +10,7 @@ export default function HatsDetails() {
     const [hat, setHat] = useState([]);
     const { id } = useParams()
     const navigate = useNavigate()
-console.log(id)
+    console.log(id)
 
     useEffect(() => {
         axios.get(`${API}/hats/${id}`).then((response) => {
@@ -36,24 +36,22 @@ console.log(id)
 
     return (
         <div>
-                    <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
-                 
-
-            {<h6> style: {hat.style}, color: {hat.color}, size: {hat.size}, price: ${hat.price}, material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>}
+            <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
+            {<h6> Style: {hat.style}, Color: {hat.color}, Size: {hat.size}, Price: ${hat.price}, Material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>}
             <div>
-                        <Link to={`/hats`}>
-                            <button>Back</button>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to={`/hats/${hat.id}/edit`}>
-                            <button>Edit</button>
-                        </Link>
-                    </div>
-                    <div>
-                        <button onClick={() => handleDelete(hat.id)}>Delete</button>
-                    </div>
-                    </div>
+                <Link to={`/hats`}>
+                    <button>Back</button>
+                </Link>
+            </div>
+            <div>
+                <Link to={`/hats/${hat.id}/edit`}>
+                    <button>Edit</button>
+                </Link>
+            </div>
+            <div>
+                <button onClick={() => handleDelete(hat.id)}>Delete</button>
+            </div>
+        </div>
     )
 };
 
