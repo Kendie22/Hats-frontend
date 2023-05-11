@@ -10,9 +10,10 @@ export default function HatsDetails() {
     const [hat, setHat] = useState([]);
     const { id } = useParams()
     const navigate = useNavigate()
+console.log(id)
 
     useEffect(() => {
-        axios.get(`${API}/hats`).then((response) => {
+        axios.get(`${API}/hats/${id}`).then((response) => {
             setHat(response.data)
         }).catch((e) => {
             console.warn("catch", e);
@@ -34,17 +35,12 @@ export default function HatsDetails() {
     }
 
     return (
-
         <div>
-            {/* <Hat />
-            {hat.id} */}
-            <div>
-            </div>
-            {hat.map((hat) => (
-                <article key={hat.id}>
                     <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
-                    <h6>color: {hat.color}, size: {hat.size}, price: ${hat.price}, material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>
-                    <div>
+                 
+
+            {<h6> style: {hat.style}, color: {hat.color}, size: {hat.size}, price: ${hat.price}, material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>}
+            <div>
                         <Link to={`/hats`}>
                             <button>Back</button>
                         </Link>
@@ -57,10 +53,7 @@ export default function HatsDetails() {
                     <div>
                         <button onClick={() => handleDelete(hat.id)}>Delete</button>
                     </div>
-                </article>
-            ))}
-        </div>
-
+                    </div>
     )
 };
 
