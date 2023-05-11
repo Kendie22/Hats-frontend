@@ -74,14 +74,16 @@ function HatNewForm() {
                     type="text"
                     name="material"
                     value={hat.material}
+                    placeholder="Material"
                     onChange={handleTextChange}
 
                 />
-                <label htmlFor="is_available">Is Avaiable:</label>
+                <label htmlFor="is_available">Is Available:</label>
                 <input
                     id="is_available"
                     type="text"
                     name="is_available"
+                    placeholder="Is Available"
                     value={hat.is_available}
                     onChange={handleTextChange}
                 />
@@ -90,14 +92,16 @@ function HatNewForm() {
                     id="price"
                     type="text"
                     name="price"
+                    placeholder="Price"
                     value={hat.price}
                     onChange={handleTextChange}
-                /> 
-                 <label htmlFor="image">Price:</label>
+                />
+                <label htmlFor="image">Image:</label>
                 <input
                     id="image"
                     type="text"
                     name="image"
+                    placeholder="Image"
                     value={hat.image}
                     onChange={handleTextChange}
                 />

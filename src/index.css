@@ -1,6 +1,5 @@
 nav {
   background-color: #8f78ff;
-  /* background-image: url("path/to/your/image.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,18 +7,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  box-shadow: 2px 2px 4px rgb(214, 9, 9);
+  box-shadow: 2px 2px 4px rgb(124, 97, 136);
   margin-bottom: 1em;
 }
+body {
+  background-color: whitesmoke;
 
+}
 main {
   width: 90%;
   margin: auto;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: double;
   color: #702f9b;
+  font-family: serif;
 }
 
 button a {
@@ -30,6 +33,9 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  text-decoration: double;
+  font-style: oblique;
+  text-align: center;
 }
 
 table {
@@ -51,12 +57,69 @@ tbody tr:nth-child(even) {
 }
 
 .New {
-  /* border: 1px solid gold;
+  
+  background-color: rgb(241, 237, 237);
+  border-radius: 7px;
   margin: auto;
-  width: 95%; */
+  width: 70%;
+  padding: 20px;
 }
+
+input[type],
+textarea {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+input[type="number"] {
+  margin: 0;
+  width: 15%;
+}
+
+input[type="submit"] {
+  background-color: rgb(229, 229, 239);
+  border-radius: 3px;
+  width: 30%;
+}
+
 
 .New form {
   margin: auto;
   width: 95%
+  
+}
+
+.hat-image img {
+  padding-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.8;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.map-image {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 20px 15px 5px;
+}
+
+th.message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #c3c2f7;
+  box-shadow: 10px 5px 5px grey;
+  padding: 10px 20px 15px 5px;
+}
+
+.big-hat img{
+  width: 250px;
+  height: 250px;
+}
+
+.big-hat h4{
+  text-align: center;
+  margin-left: 399px;
 }
