@@ -1,6 +1,8 @@
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import Hat from "./hat";
 
 const API = process.env.REACT_APP_API_URL
 
@@ -31,14 +33,17 @@ export default function HatsDetails() {
 
     }
 
-
     return (
 
         <div>
+            {/* <Hat />
+            {hat.id} */}
+            <div>
+            </div>
             {hat.map((hat) => (
                 <article key={hat.id}>
                     <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
-                    <h6>{hat.id} {hat.style}, {hat.color}, {hat.size}, {hat.material}</h6>
+                    <h6>color: {hat.color}, size: {hat.size}, price: ${hat.price}, material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>
                     <div>
                         <Link to={`/hats`}>
                             <button>Back</button>
@@ -55,31 +60,6 @@ export default function HatsDetails() {
                 </article>
             ))}
         </div>
-
-        // <div>
-
-
-        // <article>
-        //     <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
-
-        //     <h6>{hat.id} {hat.style}, {hat.color}, {hat.size}, {hat.material}</h6>
-        //     <div>
-        //         <Link to={`/hats`}>
-        //             <button>Back</button>
-        //         </Link>
-        //     </div>
-        //     <div>
-        //         <Link to={`/hats/id/edit`}>
-        //             <button>Edit</button>
-        //         </Link>
-        //     </div>
-        //     <div>
-        //         <button onClick={handleDelete}> Delete</button>
-        //     </div>
-
-
-        // </article>
-        // </div>
 
     )
 };
