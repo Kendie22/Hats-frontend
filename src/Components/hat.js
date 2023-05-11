@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 function Hat({ hat }) {
     return (
         <tr>
-            <td>{hat.style}</td>
-            <td>{hat.color}</td>
-            <td>{hat.size}</td>
-            <td>{hat.is_available}</td>
-            <td>{hat.material}</td>
-            <td>{hat.price}</td>
-            <td>{hat.image}</td>
             <td>
-                <Link to={`/hats/${hat.id}`}>✏️</Link>
+                <Link to={`/hats/${hat.id}`}>
+                    <article className="hat-image">
+                        <img src={hat.image} alt="hat pic" />
+                        <h3>{hat.style}</h3>
+                    </article>
+                </Link>
             </td>
 
         </tr>

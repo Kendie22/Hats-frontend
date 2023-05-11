@@ -22,11 +22,10 @@ export default function Hats() {
                 <table>
                     <thead>
                         <tr>
-                            <th></th>
-                            <th className="message">Look at these AMAZING Hats</th>
+                            <th className="message">Discover our Stunning Hat Collection!</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="map-image">
                         {hats.map((hat) => {
                             return <Hat key={hat.id} hat={hat} />;
                         })}
