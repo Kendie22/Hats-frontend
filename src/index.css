@@ -123,3 +123,12 @@ th.message {
   text-align: center;
   margin-left: 399px;
 }
+.welcome {
+  font-family: Haettenschweiler;
+  font-size: 50px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #dfeef6;
+  box-shadow: 0 2px 4x rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
