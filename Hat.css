@@ -1,0 +1,17 @@
+.hats-container {
+  margin-top: 20px;
+}
+
+.hats-container h3 {
+  color: blue;
+}
+
+.hats-container h6 span {
+  font-weight: bold;
+}
+
+.hats-container button {
+  background-color: green;
+  color: white;
+  margin-right: 5px;
+}
