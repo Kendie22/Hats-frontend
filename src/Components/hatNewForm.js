@@ -27,6 +27,7 @@ function HatNewForm() {
         is_available: "",
         material: "",
         price: "",
+        image: "",
     });
 
     const handleTextChange = (event) => {
@@ -90,6 +91,14 @@ function HatNewForm() {
                     type="text"
                     name="price"
                     value={hat.price}
+                    onChange={handleTextChange}
+                /> 
+                 <label htmlFor="image">Price:</label>
+                <input
+                    id="image"
+                    type="text"
+                    name="image"
+                    value={hat.image}
                     onChange={handleTextChange}
                 />
                 <br />

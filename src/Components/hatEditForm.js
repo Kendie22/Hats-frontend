@@ -13,7 +13,8 @@ export default function HatEditForm() {
     size: "",
     is_available: "",
     material: "",
-    price: "",
+    price: "", 
+    image: "",
   });
 
   useEffect(() => {
@@ -93,6 +94,15 @@ export default function HatEditForm() {
             type="text"
             name="price"
             value={hat.price}
+            onChange={handleChange}
+          />
+        </div> 
+        <div>
+          <label>Image</label>
+          <input
+            type="text"
+            name="image"
+            value={hat.image}
             onChange={handleChange}
           />
         </div>
