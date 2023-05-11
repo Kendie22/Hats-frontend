@@ -10,8 +10,8 @@ export default function HatsDetails() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get(`${API}/hats/`).then((response) => {
-            setHat(response.data[0])
+        axios.get(`${API}/hats`).then((response) => {
+            setHat(response.data)
         }).catch((e) => {
             console.warn("catch", e);
         });
@@ -28,25 +28,58 @@ export default function HatsDetails() {
             .catch((e) => console.error(e)
             )
             .catch((e) => console.warn("catch", e));
+
     }
+
+
     return (
-        <article>
-            <h3>{hat.style ? <span>🧢</span> : null} {hat.color}</h3>
 
-            <h6>{hat.style}</h6>
-            <div>
-                <Link to={`/hats`}>
-                    <button>Back</button>
-                </Link>
-            </div>
-            <div>
-                <Link to={`/hats/id/edit`}>
-                    <button>Edit</button>
-                </Link>
-            </div>
+        <div>
+            {hat.map((hat) => (
+                <article key={hat.id}>
+                    <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
+                    <h6>{hat.id} {hat.style}, {hat.color}, {hat.size}, {hat.material}</h6>
+                    <div>
+                        <Link to={`/hats`}>
+                            <button>Back</button>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to={`/hats/${hat.id}/edit`}>
+                            <button>Edit</button>
+                        </Link>
+                    </div>
+                    <div>
+                        <button onClick={() => handleDelete(hat.id)}>Delete</button>
+                    </div>
+                </article>
+            ))}
+        </div>
+
+        // <div>
 
 
-        </article>
+        // <article>
+        //     <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
+
+        //     <h6>{hat.id} {hat.style}, {hat.color}, {hat.size}, {hat.material}</h6>
+        //     <div>
+        //         <Link to={`/hats`}>
+        //             <button>Back</button>
+        //         </Link>
+        //     </div>
+        //     <div>
+        //         <Link to={`/hats/id/edit`}>
+        //             <button>Edit</button>
+        //         </Link>
+        //     </div>
+        //     <div>
+        //         <button onClick={handleDelete}> Delete</button>
+        //     </div>
+
+
+        // </article>
+        // </div>
 
     )
 };
