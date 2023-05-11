@@ -38,6 +38,8 @@ export default function HatsDetails() {
         <div>
             <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
             {<h6> Style: {hat.style}, Color: {hat.color}, Size: {hat.size}, Price: ${hat.price}, Material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>}
+
+            {hat.price > 150 ? (<h4> This is a Collector's Item 👜</h4>) : (<h4> This is not a Collector's Item 👑</h4>)}
             <div>
                 <Link to={`/hats`}>
                     <button>Back</button>
