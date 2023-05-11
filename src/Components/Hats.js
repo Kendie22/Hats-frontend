@@ -23,8 +23,7 @@ export default function Hats() {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Take me there</th>
-                            <th>See this Hat</th>
+                            <th className="message">Look at these AMAZING Hats</th>
                         </tr>
                     </thead>
                     <tbody>
