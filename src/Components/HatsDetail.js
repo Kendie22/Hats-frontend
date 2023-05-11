@@ -1,6 +1,8 @@
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import Hat from "./hat";
 
 const API = process.env.REACT_APP_API_URL
 
@@ -8,10 +10,11 @@ export default function HatsDetails() {
     const [hat, setHat] = useState([]);
     const { id } = useParams()
     const navigate = useNavigate()
+    console.log(id)
 
     useEffect(() => {
-        axios.get(`${API}/hats/`).then((response) => {
-            setHat(response.data[0])
+        axios.get(`${API}/hats/${id}`).then((response) => {
+            setHat(response.data)
         }).catch((e) => {
             console.warn("catch", e);
         });
@@ -28,26 +31,27 @@ export default function HatsDetails() {
             .catch((e) => console.error(e)
             )
             .catch((e) => console.warn("catch", e));
-    }
-    return (
-        <article>
-            <h3>{hat.style ? <span>🧢</span> : null} {hat.color}</h3>
 
-            <h6>{hat.style}</h6>
+    }
+
+    return (
+        <div>
+            <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3>
+            {<h6> Style: {hat.style}, Color: {hat.color}, Size: {hat.size}, Price: ${hat.price}, Material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h6>}
             <div>
                 <Link to={`/hats`}>
                     <button>Back</button>
                 </Link>
             </div>
             <div>
-                <Link to={`/hats/id/edit`}>
+                <Link to={`/hats/${hat.id}/edit`}>
                     <button>Edit</button>
                 </Link>
             </div>
-
-
-        </article>
-
+            <div>
+                <button onClick={() => handleDelete(hat.id)}>Delete</button>
+            </div>
+        </div>
     )
 };
 
