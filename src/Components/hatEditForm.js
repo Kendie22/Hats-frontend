@@ -8,12 +8,12 @@ export default function HatEditForm() {
   const navigate = useNavigate();
 
   const [hat, setHat] = useState({
-    style: "",   
+    style: "",
     color: "",
-    size: "",
+    size: 0,
     is_available: "",
     material: "",
-    price: "", 
+    price: 0,
     image: "",
   });
 
@@ -40,7 +40,7 @@ export default function HatEditForm() {
   };
 
   return (
-    <div>    
+    <div>
       <h1>Edit Hat</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -96,7 +96,7 @@ export default function HatEditForm() {
             value={hat.price}
             onChange={handleChange}
           />
-        </div> 
+        </div>
         <div>
           <label>Image</label>
           <input
@@ -107,7 +107,7 @@ export default function HatEditForm() {
           />
         </div>
         <button type="submit">Submit</button>
-      </form>    
+      </form>
     </div>
   );
 }
