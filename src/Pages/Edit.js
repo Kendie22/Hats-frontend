@@ -1,4 +1,4 @@
-import HatEditForm from "../Components/HatEditForm";
+import HatEditForm from "../Components/hatEditForm";
 
 function Edit() {
   return (
