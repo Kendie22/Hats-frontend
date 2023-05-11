@@ -1,3 +1,33 @@
+# SNACK-A-LOG
+
+# Description
+
+This Project in order to run will need to run both back end and front end. This particular one is the front end, this project is based off data from the back end which we made about hats and the variety of different styles of hats. This project you will be able to fetch and map through code to attain hats, create a new hat, edit and existing hat and will be able to grab a single hat from a display of set hats. 
+
+
+# Developers
+
+Name: Fernando Cortez
+Role: Full-stack Developer Student
+React.js, Express.js, HTML, SQL, Postgres
+Description: Fernando is a pursuit 9.3 fellow who contributed to both front-end and back-end development.
+
+Name: Kerridene Small
+Role: Full-stack Developer Student
+React.js, Express.js, HTML, SQL, Postgres, CSS
+Description: Kerridene is a pursuit 9.3 fellow who contributed to both front-end and back-end development.
+
+# Resources
+
+
+Daily Stand Up [Trello](https://trello.com/b/CXb9DzFH/hats-fullstack-peer-project).
+
+Deployment [Netlify](TBD).
+
+This project was discussed in [Canva]().
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
