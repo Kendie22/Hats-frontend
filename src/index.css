@@ -1,6 +1,6 @@
 nav {
-  background-color: #8f78ff;
-  background-repeat: no-repeat;
+  background: rgb(238,174,202);
+  background: linear-gradient(18deg, rgba(238,174,202,1) 0%, rgba(71,125,187,1) 73%, rgba(187,71,82,1) 96%);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -11,8 +11,7 @@ nav {
   margin-bottom: 1em;
 }
 body {
-  background-color: whitesmoke;
-
+  background: white;
 }
 main {
   width: 90%;
@@ -21,13 +20,18 @@ main {
 
 a {
   text-decoration: double;
-  color: #7225a6;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   font-family: serif;
   
 }
 
 button a {
   color: rgb(7, 6, 4);
+}
+button:hover {
+  border: 2px solid #d54848;
+  background: #3d589a;
 }
 
 h4 {
