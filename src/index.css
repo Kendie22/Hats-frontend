@@ -21,12 +21,13 @@ main {
 
 a {
   text-decoration: double;
-  color: #702f9b;
+  color: #7225a6;
   font-family: serif;
+  
 }
 
 button a {
-  color: rgb(184, 140, 81);
+  color: rgb(7, 6, 4);
 }
 
 h4 {
@@ -83,7 +84,6 @@ input[type="submit"] {
   width: 30%;
 }
 
-
 .New form {
   margin: auto;
   width: 95%
@@ -128,7 +128,7 @@ th.message {
   font-size: 50px;
   padding: 20px;
   margin: 20px;
-  background-color: #dfeef6;
+  background-color: #549fcd;
   box-shadow: 0 2px 4x rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }

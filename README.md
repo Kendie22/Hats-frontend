@@ -2,8 +2,7 @@
 
 # Description
 
-This Project in order to run will need to run both back end and front end. This particular one is the front end, this project is based off data from the back end which we made about hats and the variety of different styles of hats. This project you will be able to fetch and map through code to attain hats, create a new hat, edit and existing hat and will be able to grab a single hat from a display of set hats. 
-
+This Project in order to run will need to run both back end and front end. This particular one is the front end, this project is based off data from the back end which we made about hats and the variety of different styles of hats. This project you will be able to fetch and map through code to attain hats, create a new hat, edit and existing hat and will be able to grab a single hat from a display of set hats.
 
 # Developers
 
@@ -19,14 +18,11 @@ Description: Kerridene is a pursuit 9.3 fellow who contributed to both front-end
 
 # Resources
 
-
 Daily Stand Up [Trello](https://trello.com/b/CXb9DzFH/hats-fullstack-peer-project).
 
-Deployment [Netlify](TBD).
+Deployment [Netlify](TBD) [Render](https://hats-backend.onrender.com).
 
-This project was discussed in [Canva]().
-
-
+WireFrame [Canva](https://www.canva.com/design/DAFipaT4nXI/WHpT1D9K6F1sJO7nqz3ybA/edit?utm_content=DAFipaT4nXI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 # Getting Started with Create React App
 
