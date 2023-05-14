@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import Hat from "./hat";
+//import Hat from "./hat";
 
 const API = process.env.REACT_APP_API_URL
 
@@ -21,7 +21,11 @@ export default function HatsDetails() {
     }, [id])
 
     const handleDelete = () => {
-        deleteHat()
+        if (window.confirm("Are you sure you want to delete?")) {
+            deleteHat()
+        }
+
+
     }
     const deleteHat = () => {
         axios.delete(`${API}/hats/${id}`).then(() => {
@@ -38,22 +42,19 @@ export default function HatsDetails() {
         <div className="big-hat">
             <img src={hat.image} alt="hat pic" />
 
-            {/* <h3>{hat.id ? <span>🧢</span> : null} {hat.style}</h3> */}
             {<h5> Style: {hat.style}, Color: {hat.color}, Size: {hat.size}, Price: ${hat.price}, Material: {hat.material},{" "} {hat.is_available ? "Available" : "Not available"} </h5>}
 
             {hat.price > 150 ? (<h4> This is a Collector's Item 👜</h4>) : (<h4> This is not a Collector's Item 👑</h4>)}
-            <div>
+            <div className="functionality">
                 <Link to={`/hats`}>
-                    <button>Back</button>
+                    <button className="edit-button">Back</button>
                 </Link>
-            </div>
-            <div>
+
                 <Link to={`/hats/${hat.id}/edit`}>
-                    <button>Edit</button>
+                    <button className="edit-button">Edit</button>
                 </Link>
-            </div>
-            <div>
-                <button onClick={() => handleDelete(hat.id)}>Delete</button>
+
+                <button onClick={() => handleDelete(hat.id)} className="edit-button">Delete</button>
             </div>
         </div>
     )

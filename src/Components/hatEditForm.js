@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -21,7 +21,7 @@ export default function HatEditForm() {
     axios.get(`http://localhost:3003/hats/${id}`).then((response) => {
       setHat(response.data);
     });
-  }, []);
+  }, [id]);
 
   const handleChange = (event) => {
     setHat({ ...hat, [event.target.name]: event.target.value });
@@ -101,6 +101,7 @@ export default function HatEditForm() {
           <label>Image</label>
           <input
             type="text"
+            pattern="http[s]*://.+"
             name="image"
             value={hat.image}
             onChange={handleChange}

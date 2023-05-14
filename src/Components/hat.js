@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 
 function Hat({ hat }) {
-    console.log(hat.image)
     return (
         <tr>
             <td>

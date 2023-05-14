@@ -9,18 +9,18 @@ This Project in order to run will need to run both back end and front end. This 
 Name: Fernando Cortez
 Role: Full-stack Developer Student
 React.js, Express.js, HTML, SQL, Postgres
-Description: Fernando is a pursuit 9.3 fellow who contributed to both front-end and back-end development.
+Description: Fernando is a Pursuit 9.3 Fellow who contributed to both front-end and back-end development.
 
 Name: Kerridene Small
 Role: Full-stack Developer Student
 React.js, Express.js, HTML, SQL, Postgres, CSS
-Description: Kerridene is a pursuit 9.3 fellow who contributed to both front-end and back-end development.
+Description: Kerridene is a Pursuit 9.3 Fellow who contributed to both front-end and back-end development.
 
 # Resources
 
 Daily Stand Up [Trello](https://trello.com/b/CXb9DzFH/hats-fullstack-peer-project).
 
-Deployment [Netlify](TBD) [Render](https://hats-backend.onrender.com).
+Deployment [Netlify](https://shimmering-liger-24ba68.netlify.app) [Render](https://hats-backend.onrender.com).
 
 WireFrame [Canva](https://www.canva.com/design/DAFipaT4nXI/WHpT1D9K6F1sJO7nqz3ybA/edit?utm_content=DAFipaT4nXI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
