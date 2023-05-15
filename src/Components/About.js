@@ -20,7 +20,7 @@ const About = () => {
             <em>Fernando Cortez</em>
           </h4>
           <p className="bio-text-fc">
-          I'm a Full Stack Developer with a background in medical who lives in Brooklyn, NY.
+            I'm a Full Stack Developer with a background in medical who lives in Brooklyn, NY.
             My favorite type of hat is the fedora and Beanie.
             Please check out my links below to connect with me.
           </p>
