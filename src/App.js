@@ -13,6 +13,7 @@ import Show from "./Pages/Show";
 
 // COMPONENTS
 import NavBar from "./Components/Nav.Bar";
+import About from "./Components/About.js";
 
 function App() {
     return (
@@ -26,7 +27,8 @@ function App() {
                         <Route path="/hats/new" element={<New />} />
                         <Route path="/hats/:id" element={<Show />} />
                         <Route path="/hats/:id/edit" element={<Edit />} />
-                        <Route path="*" element={<FourOFour />} />
+                        <Route path="*" element={<FourOFour />} /> 
+                        <Route path="/hats/about" element={<About />} />
                     </Routes>
                 </main>
             </Router>

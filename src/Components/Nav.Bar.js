@@ -10,6 +10,9 @@ export default function NavBar() {
             <button>
                 <Link to="/hats/new">New Hats</Link>
             </button>
+            <button>
+                <Link to="/hats/about">AboutUs</Link>
+            </button>
         </nav>
     );
 }

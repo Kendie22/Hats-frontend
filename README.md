@@ -1,4 +1,4 @@
-# SNACK-A-LOG
+# Hats
 
 # Description
 
@@ -8,7 +8,7 @@ This Project in order to run will need to run both back end and front end. This 
 
 Name: Fernando Cortez
 Role: Full-stack Developer Student
-React.js, Express.js, HTML, SQL, Postgres
+React.js, Express.js, HTML, SQL, Postgres, Css
 Description: Fernando is a Pursuit 9.3 Fellow who contributed to both front-end and back-end development.
 
 Name: Kerridene Small
