@@ -20,8 +20,8 @@ const About = () => {
             <em>Fernando Cortez</em>
           </h4>
           <p className="bio-text-fc">
-            I'm a Full Stack Developer with a background in medical field from Brooklyn, NY.
-            I am working on becoming a video game developer and my favorite type of hat is the fedora.
+           
+            My favorite type of hat is the fedora and Beanie.
             Please check out my links below to connect with me.
           </p>
           <a href="https://github.com/CortezFernando">
